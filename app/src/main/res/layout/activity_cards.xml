@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:rowCount="2"
+    android:columnCount="2"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    tools:context=".cards">
+
+        <!-- First CardView -->
+
+    <androidx.cardview.widget.CardView
+            android:id="@+id/androidDev"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="40dp"
+            android:layout_margin="8dp"
+            app:cardBackgroundColor="@color/material_dynamic_primary60"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="4dp" >
+
+        <TextView
+            android:layout_gravity="center"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:fontFamily="cursive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android Development" />
+    </androidx.cardview.widget.CardView>
+        <!-- Second CardView -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/iosDev"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="150dp"
+            android:layout_margin="8dp"
+            app:cardBackgroundColor="@color/material_dynamic_primary60"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="4dp" >
+
+            <TextView
+                android:layout_gravity="center"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:fontFamily="cursive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IOS Development" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Third CardView -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/webDev"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="40dp"
+            android:layout_margin="8dp"
+            app:cardBackgroundColor="@color/material_dynamic_primary60"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="4dp" >
+
+            <TextView
+                android:layout_gravity="center"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:fontFamily="cursive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Web Development" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Fourth CardView -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/machineLear"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            app:cardBackgroundColor="@color/material_dynamic_primary60"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="4dp" >
+
+            <TextView
+                android:layout_gravity="center"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:fontFamily="cursive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Machine Learning" />
+        </androidx.cardview.widget.CardView>
+
+</GridLayout>
