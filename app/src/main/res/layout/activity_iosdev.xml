@@ -47,7 +47,7 @@
         android:layout_height="150dp"
         android:layout_gravity="center"
         android:layout_weight="1"
-        android:src="@drawable/objectiveC" />
+        android:src="@drawable/objective" />
 
     <TextView
         android:id="@+id/textView3"
