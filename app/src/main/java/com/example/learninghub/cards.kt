@@ -1,7 +1,10 @@
 package com.example.learninghub
 
 import android.content.Intent
+import android.media.Image
+import android.net.Uri
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
@@ -18,6 +21,7 @@ class cards : AppCompatActivity() {
         val web = findViewById<CardView>(R.id.webDev)
         val ios = findViewById<CardView>(R.id.iosDev)
         val ml = findViewById<CardView>(R.id.machineLear)
+        val contact = findViewById<ImageView>(R.id.imageView)
 
         android.setOnClickListener{
             val intent = Intent(applicationContext, AndroidDev::class.java)
@@ -39,10 +43,12 @@ class cards : AppCompatActivity() {
             startActivity(intent)
         }
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+        contact.setOnClickListener{
+            val intent = Intent(Intent.ACTION_DIAL).apply {
+                intent.data = Uri.parse("tel:+917983518424") // Set the phone number here
+            }
+            startActivity(intent)
         }
+
     }
 }

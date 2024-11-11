@@ -10,7 +10,6 @@
     android:baselineAligned="false"
     android:orientation="horizontal"
     tools:context=".cards">
-
         <!-- First CardView -->
 
     <androidx.cardview.widget.CardView
@@ -83,7 +82,8 @@
         </androidx.cardview.widget.CardView>
 
         <!-- Fourth CardView -->
-        <androidx.cardview.widget.CardView
+
+    <androidx.cardview.widget.CardView
             android:id="@+id/machineLear"
             android:layout_width="150dp"
             android:layout_height="150dp"
@@ -102,6 +102,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Machine Learning" />
-        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_gravity="bottom"
+        android:layout_margin="30dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/call" />
+
 
 </GridLayout>
